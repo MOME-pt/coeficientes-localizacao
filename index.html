@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coeficientes de Localização IMI – MOME</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Segoe UI',Arial,sans-serif;background:#f5f5f5;color:#222}
+  header{background:#1a3a5c;color:#fff;padding:28px 32px}
+  header h1{font-size:22px;font-weight:600;margin-bottom:4px}
+  header p{font-size:13px;color:#a8c0d6;margin-top:4px}
+  main{max-width:780px;margin:48px auto;padding:0 24px}
+  .card{background:#fff;border-radius:10px;padding:28px 32px;margin-bottom:24px;box-shadow:0 2px 8px rgba(0,0,0,.08);display:flex;gap:28px;align-items:center}
+  .card-icon{font-size:40px;flex-shrink:0}
+  .card h2{font-size:17px;font-weight:600;margin-bottom:6px;color:#1a3a5c}
+  .card p{font-size:13px;color:#555;line-height:1.6;margin-bottom:14px}
+  .btn{display:inline-block;background:#1a3a5c;color:#fff;padding:9px 20px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600;transition:background .2s}
+  .btn:hover{background:#27547d}
+  .note{font-size:12px;color:#888;margin-top:32px;border-top:1px solid #e0e0e0;padding-top:16px;line-height:1.6}
+</style>
+</head>
+<body>
+<header>
+  <h1>Coeficientes de Localização IMI – Habitação</h1>
+  <p>Fonte: SIGIMI/AT · Zonamento em vigor (2014/2015) · MOME</p>
+</header>
+<main>
+  <div class="card">
+    <div class="card-icon">🗺️</div>
+    <div>
+      <h2>Área de Trabalho MOME — 53 concelhos</h2>
+      <p>AMP, Cávado, Ave, Tâmega e Sousa e Região de Aveiro.<br>1 093 zonas · coeficientes de 0,40 a 3,0.</p>
+      <a class="btn" href="mapa_53_concelhos.html" target="_blank">Abrir mapa</a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-icon">📍</div>
+    <div>
+      <h2>Área Metropolitana do Porto — 17 concelhos</h2>
+      <p>Mapa com maior pormenor geométrico, focado nos 17 concelhos da AMP.<br>456 zonas · coeficientes de 0,50 a 3,0.</p>
+      <a class="btn" href="mapa_AMP17.html" target="_blank">Abrir mapa</a>
+    </div>
+  </div>
+  <p class="note">
+    <strong>Como usar:</strong> clique num mapa, passe o rato sobre as zonas para ver o coeficiente, o concelho e o código. No canto superior direito pode trocar entre OpenStreetMap e satélite e ligar/desligar os limites dos concelhos.<br><br>
+    <strong>Nota metodológica:</strong> os coeficientes são os que estão legalmente em vigor, aprovados pela Portaria n.º 420-A/2015. O zonamento não foi revisto desde então. Os contornos no mapa HTML estão geometricamente simplificados; para análise detalhada de parcelas, utilize os ficheiros GeoJSON ou o simulador oficial da AT.<br><br>
+    Cada zona é atribuída ao concelho onde tem a maior parte da sua área.
+  </p>
+</main>
+</body>
+</html>
