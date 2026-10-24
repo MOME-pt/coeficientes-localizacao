@@ -17,15 +17,17 @@
   .card p{font-size:13px;color:#555;line-height:1.6;margin-bottom:14px}
   .btn{display:inline-block;background:#1a3a5c;color:#fff;padding:9px 20px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600;transition:background .2s}
   .btn:hover{background:#27547d}
+  .section{font-size:15px;font-weight:700;color:#1a3a5c;text-transform:uppercase;letter-spacing:.5px;margin:36px 0 14px}
   .note{font-size:12px;color:#888;margin-top:32px;border-top:1px solid #e0e0e0;padding-top:16px;line-height:1.6}
 </style>
 </head>
 <body>
 <header>
-  <h1>Coeficientes de Localização IMI – Habitação</h1>
+  <h1>Coeficientes de Localização IMI – Habitação e Terrenos</h1>
   <p>Fonte: SIGIMI/AT · Zonamento em vigor (2014/2015) · MOME</p>
 </header>
 <main>
+  <h2 class="section">Habitação – coeficientes de localização</h2>
   <div class="card">
     <div class="card-icon">🗺️</div>
     <div>
@@ -42,7 +44,33 @@
       <a class="btn" href="mapa_AMP17.html" target="_blank">Abrir mapa</a>
     </div>
   </div>
+  <h2 class="section">Terrenos para construção – % do valor do terreno</h2>
+  <div class="card">
+    <div class="card-icon">🏗️</div>
+    <div>
+      <h2>Área de Trabalho MOME — 53 concelhos</h2>
+      <p>Percentagem do valor do terreno de implantação (art. 45.º CIMI).<br>680 zonas · de 15% a 38%.</p>
+      <a class="btn" href="mapa_terrenos_53.html" target="_blank">Abrir mapa</a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-icon">🏗️</div>
+    <div>
+      <h2>Área Metropolitana do Porto — 17 concelhos</h2>
+      <p>Percentagem do valor do terreno de implantação.<br>315 zonas · de 15% a 38%.</p>
+      <a class="btn" href="mapa_terrenos_AMP17.html" target="_blank">Abrir mapa</a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-icon">🏗️</div>
+    <div>
+      <h2>Porto</h2>
+      <p>Percentagem do valor do terreno de implantação no concelho do Porto.<br>25 zonas · de 24% a 38%.</p>
+      <a class="btn" href="mapa_terrenos_porto.html" target="_blank">Abrir mapa</a>
+    </div>
+  </div>
   <p class="note">
+    <strong>Atenção:</strong> no mapa de Terrenos do Porto a escala de cores vai de 2 em 2 pontos percentuais (24–40%). Nos mapas de 17 e de 53 concelhos vai de 3 em 3 pontos (15–39%). A mesma cor não representa a mesma percentagem entre o mapa do Porto e os outros dois.<br><br>
     <strong>Como usar:</strong> clique num mapa, passe o rato sobre as zonas para ver o coeficiente, o concelho e o código. No canto superior direito pode trocar entre OpenStreetMap e satélite e ligar/desligar os limites dos concelhos.<br><br>
     <strong>Nota metodológica:</strong> os coeficientes são os que estão legalmente em vigor, aprovados pela Portaria n.º 420-A/2015. O zonamento não foi revisto desde então. Os contornos no mapa HTML estão geometricamente simplificados; para análise detalhada de parcelas, utilize os ficheiros GeoJSON ou o simulador oficial da AT.<br><br>
     Cada zona é atribuída ao concelho onde tem a maior parte da sua área.
